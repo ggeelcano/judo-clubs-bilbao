@@ -58,6 +58,9 @@ nav{position:sticky;top:0;background:rgba(251,248,242,.96);backdrop-filter:blur(
 .brand-text{display:flex;flex-direction:column;line-height:1}
 .brand-text b{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--tierra)}
 .brand-text small{font-size:9.5px;letter-spacing:.30em;color:var(--gris);margin-top:5px;text-transform:uppercase;font-weight:500}
+.brand-logo{height:46px;width:auto;max-width:230px;object-fit:contain;mix-blend-mode:multiply}
+.pl-logo-img{height:30px;width:auto;max-width:220px;object-fit:contain;margin-bottom:6px}
+.foot-logo{height:42px;width:auto;max-width:220px;object-fit:contain;margin-bottom:16px}
 .nav-links{display:flex;gap:30px;font-size:13px;letter-spacing:.04em;font-weight:500;color:var(--tierra)}
 .nav-links a{padding:6px 0;transition:.2s;border-bottom:1px solid transparent}
 .nav-links a:hover{color:var(--brasa-2);border-bottom-color:var(--brasa)}
@@ -219,7 +222,7 @@ footer{background:var(--carbon);color:var(--crema);padding:64px 28px 30px}
 <div id="preloader" role="status" aria-label="Cargando Kosen Judo">
   <div class="pl-photo" style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZNdk2u9V_hn8VZQBdC4wv8AwAf6fJihM3kCJ4YQVMW2o5oMkHz2DPU4a47NQ8cqTWMabokSyjSSVZZq1SnGyBRDzzz9ipsNBknBw0PbSTD5qKMI6BsMSH9y3vyFdaVM6jEWY28cZGZWq3fteg=s4800-w1600')" aria-hidden="true"></div>
   <div class="pl-vignette" aria-hidden="true"></div>
-  <div class="pl-logo" aria-hidden="true"><span class="k">KJ<i>.</i></span><small>Kosen Judo</small></div>
+  <div class="pl-logo" aria-hidden="true"><img class="pl-logo-img" src="logo.jpg" alt="" style="background:rgba(255,255,255,.92);padding:6px 12px;border-radius:4px"></div>
   <div class="pl-center"><h2>KOSEN JUDO</h2><div class="pl-rule" aria-hidden="true"></div><div class="pl-jp jp" aria-hidden="true">柔道</div></div>
   <div class="pl-bar" aria-hidden="true"></div>
 </div>
@@ -231,18 +234,17 @@ footer{background:var(--carbon);color:var(--crema);padding:64px 28px 30px}
 <nav>
   <div class="nav-inner">
     <a class="brand" href="#top" aria-label="Kosen Judo, inicio">
-      <span class="brand-mark jp" aria-hidden="true">柔</span>
-      <span class="brand-text"><b>Kosen Judo</b><small>Casco Viejo · Bilbao</small></span>
+      <img class="brand-logo" src="logo.jpg" alt="Kosen Judo">
     </a>
     <div class="nav-links">
-      <a href="#dojo">El Club</a><a href="#clases">Clases</a><a href="#horario">Horario</a><a href="#galeria">Galería</a><a href="#resenas">Reseñas</a>
+      <a href="#top">Inicio</a><a href="#judo">Judo</a><a href="#dojo">El Club</a><a href="#clases">Actividades</a><a href="#horario">Horarios</a><a href="#contacto">Dónde estamos</a>
     </div>
     <a class="nav-cta" href="#contacto">Clase de prueba</a>
     <button class="hamburger" id="hamb" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu" id="mmenu">
-  <a href="#dojo">El Club</a><a href="#clases">Clases</a><a href="#horario">Horario</a><a href="#galeria">Galería</a><a href="#resenas">Reseñas</a>
+  <a href="#top">Inicio</a><a href="#judo">Judo</a><a href="#dojo">El Club</a><a href="#clases">Actividades</a><a href="#horario">Horarios</a><a href="#contacto">Dónde estamos</a>
   <a class="mm-cta" href="#contacto">Clase de prueba</a>
 </div>
 <main id="main">
@@ -269,6 +271,32 @@ footer{background:var(--carbon);color:var(--crema);padding:64px 28px 30px}
     <div class="stat"><b>25</b><span>Reseñas reales</span></div>
     <div class="stat"><b class="jp">柔道</b><span>El camino suave</span></div>
     <div class="stat"><b>Prueba</b><span>1ª clase gratis</span></div>
+  </div>
+</section>
+<section class="clases" id="judo" style="background:var(--crema)">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow">El camino suave</span>
+      <h2 class="section-title">¿Qué es el <em>judo</em>?</h2>
+      <p class="section-lead">柔道 significa <em>“el camino de la flexibilidad”</em>. Creado por Jigoro Kano en 1882, el judo es mucho más que un deporte: es una escuela de vida donde se entrena el cuerpo y, sobre todo, el carácter.</p>
+    </div>
+    <div class="clases-grid">
+      <article class="clase">
+        <span class="clase-num">01 — <span class="jp">精力善用</span></span>
+        <h3>Máxima eficacia</h3>
+        <p>Seiryoku Zen'yō: lograr el máximo resultado con el mínimo esfuerzo. La inteligencia y la técnica vencen a la fuerza bruta, dentro y fuera del tatami.</p>
+      </article>
+      <article class="clase">
+        <span class="clase-num">02 — <span class="jp">自他共栄</span></span>
+        <h3>Progresar juntos</h3>
+        <p>Jita Kyōei: prosperar en armonía con los demás. En el judo se crece ayudando a crecer a tus compañeros; el respeto es la primera lección.</p>
+      </article>
+      <article class="clase">
+        <span class="clase-num">03 — <span class="jp">礼</span></span>
+        <h3>Cuerpo y carácter</h3>
+        <p>Disciplina, autocontrol, constancia y superación. Valores que se entrenan en cada clase y que acompañan al judoka toda la vida.</p>
+      </article>
+    </div>
   </div>
 </section>
 <section class="dojo" id="dojo">
@@ -464,7 +492,7 @@ footer{background:var(--carbon);color:var(--crema);padding:64px 28px 30px}
 <footer>
   <div class="foot-inner">
     <div class="foot-brand">
-      <div class="brand"><span class="brand-mark jp" aria-hidden="true" style="border-color:rgba(244,237,224,.4)">柔</span><span class="brand-text"><b>Kosen Judo</b><small style="color:rgba(244,237,224,.55)">Casco Viejo · Bilbao</small></span></div>
+      <img class="foot-logo" src="logo.jpg" alt="Kosen Judo" style="background:rgba(255,255,255,.92);padding:8px 14px;border-radius:4px">
       <p>Judo · Jiu-Jitsu · Grappling en Casco Viejo, Bilbao. El camino del judo para todas las edades y niveles.</p>
     </div>
     <div class="foot-col"><h4>Navegación</h4><a href="#dojo">El Club</a><a href="#clases">Clases</a><a href="#horario">Horario</a><a href="#resenas">Reseñas</a></div>
